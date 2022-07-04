@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#2b1055, #7597de);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color :white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #f8f8f8;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header ul il {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+  padding: 6px 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: #ffffff;
+  color: #2b1055;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000000;
+}
+
+section .info .image {
+  transform: scale(0.25);
+}
+
+section .info .description {
+  color: white;
+}
+
+section .container {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+section .container a {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background: #51446e;
+  border-radius: 20px;
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+section .container a:hover {
+  transform: scale(1.05);
+}
+
+section .container a span {
+  margin: 5px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link rel="icon" href="https://cdn.glitch.global/92d23da1-fc46-430a-bed9-1cf746581190/icon_page.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style_contact.css"/>
+    <script src="/script_contact.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="https://clap-journey.glitch.me/index.html" class="logo">Logo</a>
+      <ul>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/index.html">
+            <span class="icon_nav">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Home</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/about.html">
+            <span class="icon_nav">
+              <ion-icon name="people-outline"></ion-icon>
+            </span>
+            <span class="text_nav">About</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/contact.html" class="active">
+            <span class="icon_nav">
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Contact</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/saloon.html">
+            <span class="icon_nav">
+              <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Saloon</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="#">
+            <span class="icon_nav">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Profil</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <form>
+      <h1>Contactez-nous</h1>
+      <div class="separation"></div>
+      <div class="corps_form">
+        <div class="left_form">
+          <div class="box_form">
+            <label>Votre Nom</label>
+            <input type="text_form">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box_form">
+            <label>Votre adresse e-mail</label>
+            <input type="text_form" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="box_form">
+            <label>Object</label>
+            <input type="text_form" placeholder="Saisissez ici ...">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="right_form">
+          <div class="box_form">
+            <label>Message</label>
+            <textarea placeholder="Saisissez ici ..." required></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="foot_form" align="center">
+        <button>Envoyer le message</button>
+      </div>
+    </form>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
