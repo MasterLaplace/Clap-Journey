@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saloon</title>
+    <link rel="icon" href="https://cdn.glitch.global/92d23da1-fc46-430a-bed9-1cf746581190/icon_page.ico" />
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
+    <meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="/style_saloon.css" />
+    <script src="/script_saloon.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="https://clap-journey.glitch.me/index.html" class="logo">Logo</a>
+      <ul>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/index.html">
+            <span class="icon_nav">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Home</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/about.html">
+            <span class="icon_nav">
+              <ion-icon name="people-outline"></ion-icon>
+            </span>
+            <span class="text_nav">About</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="https://clap-journey.glitch.me/contact.html">
+            <span class="icon_nav">
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Contact</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="#" class="active">
+            <span class="icon_nav">
+              <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Saloon</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="#">
+            <span class="icon_nav">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="text_nav">Profil</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section>
+      <div class="messages">
+        <div class="message">
+          <span class="date">13:57</span>
+          <span class="user">Me</span> :
+          <span class="content">message</span>
+        </div>
+        <div class="message">
+          <span class="date">13:57</span>
+          <span class="user">Me</span> :
+          <span class="content">message</span>
+        </div>
+        <div class="message">
+          <span class="date">13:57</span>
+          <span class="user">Me</span> :
+          <span class="content">message</span>
+        </div>
+        <div class="message">
+          <span class="date">13:57</span>
+          <span class="user">Me</span> :
+          <span class="content">message</span>
+        </div>
+      </div>
+      <div class="user-input">
+        <form action="back_saloon.php?task=write" method="POST">
+          <input type="text" name="author" id="author" placeholder="Pseudo ?">
+          <input type="text" id="content" name="content" placeholder="Saisissez ici ...">
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
