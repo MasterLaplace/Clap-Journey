@@ -2,11 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Contact me</title>
+    <title>Chapter 05</title>
     <link rel="icon" href="https://cdn.glitch.global/92d23da1-fc46-430a-bed9-1cf746581190/icon_page.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style_contact.css"/>
-    <script src="/script_contact.js" defer></script>
+    <link rel="stylesheet" href="/chapter/style_chap_05.css"/>
+    <script src="/chapter/script_chap_05.js" defer></script>
   </head>
   <body>
     <header>
@@ -29,7 +29,7 @@
           </a>
         </li>
         <li class="list_nav">
-          <a href="https://clap-journey.glitch.me/contact.html" class="active">
+          <a href="https://clap-journey.glitch.me/contact.html">
             <span class="icon_nav">
               <ion-icon name="mail-outline"></ion-icon>
             </span>
@@ -51,48 +51,20 @@
             </span>
             <span class="text_nav">Profil</span>
           </a>
-          <a href="tel:06-46-54-66-90">
-            <span class="icon_nav">
-              <ion-icon name="call-outline"></ion-icon>
-            </span>
-            <span class="text_nav">number</span>
-          </a>
         </li>
       </ul>
     </header>
-    <form>
-      <h1>Contactez-nous</h1>
-      <div class="separation"></div>
-      <div class="corps_form">
-        <div class="left_form">
-          <div class="box_form">
-            <label>Votre Nom</label>
-            <input type="text_form">
-            <i class="fa-solid fa-user"></i>
-          </div>
-          <div class="box_form">
-            <label>Votre adresse e-mail</label>
-            <input type="text_form" required>
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="box_form">
-            <label>Object</label>
-            <input type="text_form" placeholder="Saisissez ici ..." required>
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        </div>
-        <div class="right_form">
-          <div class="box_form">
-            <label>Message</label>
-            <textarea placeholder="Saisissez ici ..." required></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="foot_form" align="center">
-        <button>Envoyer le message</button>
-      </div>
-    </form>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section>
+      <div class="toolbox">
+        <button id="decrease">-</button>
+        <span id="size">5</span>
+        <button id="increase">+</button>
+        <input type="color" id="color">
+        <button id="clear"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
+      <canvas id="game" width="500" height="500"></canvas>
+    </section>
   </body>
 </html>
